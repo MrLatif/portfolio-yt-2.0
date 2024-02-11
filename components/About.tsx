@@ -27,7 +27,7 @@ export default function About({}: Props) {
         <Image
           src="/about1.jpg"
           alt="About Me Image"
-          className=" w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
+          className="w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
           width={500}
           height={600}
         />
