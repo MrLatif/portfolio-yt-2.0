@@ -22,12 +22,12 @@ export default function About({}: Props) {
         whileInView={{ x: 0, opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1.2 }}
-        className="mt-10"
+        className="mt-10 -mb-20 md:mb-0 flex-shrink-0"
       >
         <Image
           src="/about1.jpg"
           alt="About Me Image"
-          className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
+          className=" w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
           width={500}
           height={600}
         />
