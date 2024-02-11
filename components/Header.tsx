@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 import { motion } from "framer-motion";
@@ -11,9 +13,10 @@ export default function Header({}: Props) {
         initial={{
           x: -500,
           opacity: 0,
-          scale: 0.5,
+          scale: 0.2,
         }}
         animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
         className="flex flex-row items-center"
       >
         {/* Social Icons */}
@@ -33,7 +36,12 @@ export default function Header({}: Props) {
           bgColor="transparent"
         />
       </motion.div>
-      <div className="flex flex-row items-center text-gray-300 cursor-pointer">
+      <motion.div
+        initial={{ x: 500, opacity: 0, scale: 0.2 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-row items-center text-gray-300 cursor-pointer"
+      >
         <SocialIcon
           className="cursor-pointer"
           network="email"
@@ -43,7 +51,7 @@ export default function Header({}: Props) {
         <p className="uppercase hidden md:inline-flex text-sm text-gray-400">
           Get In Touch
         </p>
-      </div>
+      </motion.div>
     </header>
   );
 }
