@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
@@ -10,7 +12,19 @@ export default function About({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About
       </h3>
-      {/* <motion.Image src={} alt="" width={} height={} /> */}
+      <motion.div
+        initial={{ x: -200 }}
+        whileInView={{ x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.2 }}
+      >
+        <Image
+          src="/about1.jpg"
+          alt="About Me Image"
+          width={500}
+          height={500}
+        />
+      </motion.div>
     </div>
   );
 }
