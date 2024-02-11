@@ -1,7 +1,22 @@
+import Header from "@/components/Header";
+
 export default function Home() {
   return (
     <div>
-      <h1 className="text-red-500">Lets build an AWESOME portfolio</h1>
+      {/* Header */}
+      <Header />
+
+      {/* Hero */}
+
+      {/* About */}
+
+      {/* Experience */}
+
+      {/* Skills */}
+
+      {/* Projects */}
+
+      {/* Contact Me */}
     </div>
   );
 }
