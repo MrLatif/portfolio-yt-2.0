@@ -50,7 +50,7 @@ export default function About({}: Props) {
           wield my coding wizardry to conjure up mesmerizing user interfaces
           that dazzle and delight. 💻 Every pixel I place is a brushstroke in
           the canvas of digital art, meticulously crafted to captivate audiences
-          and evoke emotions. 🎨
+          and evoke emotions.🎨
         </p>
       </div>
     </motion.div>
